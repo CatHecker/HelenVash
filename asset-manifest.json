@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/HelenVash/static/css/main.99e07398.css",
-    "main.js": "/HelenVash/static/js/main.ead8146c.js",
+    "main.js": "/HelenVash/static/js/main.4afc9063.js",
     "static/media/books.avif": "/HelenVash/static/media/books.f3d14d6ba1bc77336dd4.avif",
     "static/media/helen.jpg": "/HelenVash/static/media/helen.4f97fadc96540b568328.jpg",
     "static/media/tg.png": "/HelenVash/static/media/tg.6482805bb5de1d1ff141.png",
     "index.html": "/HelenVash/index.html",
     "main.99e07398.css.map": "/HelenVash/static/css/main.99e07398.css.map",
-    "main.ead8146c.js.map": "/HelenVash/static/js/main.ead8146c.js.map"
+    "main.4afc9063.js.map": "/HelenVash/static/js/main.4afc9063.js.map"
   },
   "entrypoints": [
     "static/css/main.99e07398.css",
-    "static/js/main.ead8146c.js"
+    "static/js/main.4afc9063.js"
   ]
 }
