@@ -1,0 +1,459 @@
+* {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Roboto;
+  --main-color: #d82768;
+  --main-yellow: #ffe619;
+  --cont-width: 1300px;
+  --half-width: 650px;
+  
+}
+:root {
+  --card-height: auto
+}
+body {
+  overflow-x: hidden
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+/*   ****************  reset css end  ****************                          */
+::selection {
+  background-color: var(--main-color);
+  color: var(--main-yellow);
+
+}
+
+header {
+
+  background-color: var(--main-color);
+  font-family: Roboto;
+  padding: .5em 1em;
+  color: white;
+  width: 100vw;
+  justify-content: space-between;
+  display: flex;
+  height: 50px;
+  align-items: center
+}
+
+.helenMain {
+  display: inline;
+  font-size: 1.8em;
+  font-weight: bold;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.phoneHead {
+  margin: 20px;
+  font-size: 1em;
+  color: white;
+  font-weight: 500
+}
+
+header h1 b {
+  font-size: inherit;
+  color: var(--main-yellow)
+}
+
+.contacts {
+  line-height: 50px;
+  padding: 0 60px 0 0
+}
+
+.tgLogo {
+  height: 35px;
+  margin: 7px -10px 0 0
+}
+
+.main {
+  width: var(--cont-width);
+  padding: 50px calc(50vw - var(--half-width));
+  /* background-color: blanchedalmond; */
+}
+
+.bgImg {
+  filter: blur(1px) brightness(60%);
+  position: absolute;
+  top: 65px;
+  left: 0;
+  z-index: -9999;
+  height: calc(100% + 350px);
+  width: 100vw;
+  object-fit: cover
+}
+
+.helenPhoto {
+  display: block;
+  width: 450px;
+
+  border-radius: 50%;
+  transform: rotate(10deg)
+}
+
+
+.titleFlex {
+  display: flex;
+  justify-content: space-between
+}
+
+.aboutMe {
+  display: block;
+  width: 600px;
+  font-size: 1.2em;
+  padding: 75px 0 0 0;
+  color: white
+}
+
+span {
+  color: var(--main-color);
+
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.aboutMe h3 {
+  font-size: 2em;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.aboutMe p {
+  margin: 35px 0 0 0;
+  font-size: .8em;
+  margin-top: 50px;
+  filter: brightness(85%)
+}
+
+.aboutMe h5 {
+  line-height: 1.5
+}
+
+.readPoems {
+  margin: 75px;
+  padding: 25px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  border-radius: 45px;
+  font-size: 1.5em;
+  color: white;
+  transition: 0.5s filter, 0.5s color;
+  filter: brightness(100%);
+  display: block
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.readPoems:hover {
+  color: yellow;
+  filter: brightness(105%)
+}
+
+.poem {
+  color: white;
+  /* background-color: var(--main-color); */
+  background-color: #c2245e;
+  background: linear-gradient(0.45turn, #c2245e, var(--main-color));
+  font-size: 1.2em;
+  padding: 17px;
+  margin: 20px;
+  border-radius: .5em;
+  white-space: pre-wrap;
+  height: fit-content;
+  overflow: hidden;
+  line-height: normal;
+  min-width: 10em;
+  max-width: 359px;
+}
+
+.poemTitle {
+  font-weight: bold;
+  display: inline;
+}
+
+::-webkit-scrollbar {
+  width: .3em;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #82173e;
+  /* основной цвет на 20 темнее */
+  border-radius: .5em;
+  padding-top: 60px
+}
+
+@keyframes heightChanger {
+  from {
+    height: 2.5em
+  }
+  to {
+    height: var(--card-height)
+  }
+}
+
+.firstStr {
+  height: 1.4em;
+  overflow: hidden;
+  transition: height 3s
+}
+
+.poemsDiv {
+  padding: 300px calc(50vw - var(--half-width)) 150px calc(50vw - var(--half-width));
+  background: linear-gradient(rgba(245, 40, 145, 0), #1a1a1a 240px);
+}
+
+.poems {
+  display: flex;
+
+  width: var(--cont-width);
+  flex-wrap: wrap;
+  align-items: left
+}
+
+
+.readMoreButton {
+  filter: brightness(80%);
+  transition: 0.5s color
+}
+
+.readMoreButton:hover {
+  color: var(--main-yellow);
+
+}
+
+.myWorks {
+  color: white;
+  font-size: 3em;
+
+  font-weight: bold;
+  padding: 0 0 1em 0
+}
+
+
+
+img {
+  -webkit-user-select: none;
+  /* Safari */
+  user-select: none;
+}
+
+@media (max-width: 1350px) {
+  * {
+    font-size: 16px;
+    --cont-width: 1000px;
+    --half-width: 500px;
+  }
+
+  .aboutMe {
+    width: 500px
+  }
+
+  .readPoems {
+    margin: 50px;
+    font-size: 1.5em;
+    width: auto;
+    display: inline-block
+  }
+
+  .poemsDiv {
+    padding: 160px calc(50vw - var(--half-width)) 200px calc(50vw - var(--half-width));
+    background: linear-gradient(rgba(245, 40, 145, 0), #1a1a1a 100px);
+  }
+
+  .poem {
+    max-width: 259px
+  }
+}
+
+@media (max-width: 1040px) {
+  * {
+    font-size: 15px;
+    --cont-width: 700px;
+    --half-width: 350px;
+  }
+
+  .helenPhoto {
+    width: 300px;
+    height: 400px;
+  }
+
+  .aboutMe {
+    width: 350px;
+    padding: 0
+  }
+
+  .readPoems {
+    margin: 30px 20px;
+    font-size: 1.3em;
+    width: auto;
+  }
+
+  .poem {
+    max-width: 259px
+  }
+}
+
+@media (max-width: 740px) {
+  * {
+    font-size: 15px;
+    --cont-width: 500px;
+    --half-width: 250px;
+  }
+
+  .aboutMe p {
+    display: none
+  }
+
+  .helenPhoto {
+    width: 250px;
+    height: 333px;
+  }
+
+  .aboutMe {
+    width: 300px;
+  }
+
+  .aboutMe h3 {
+    padding: 20px 0
+  }
+
+  .readPoems {
+    margin: 35px 10px;
+    font-size: 1em;
+    padding: 15px;
+  }
+
+  .poem {
+    max-width: var(--half-width)
+  }
+
+}
+
+@media (max-width: 740px) {
+  * {
+    --cont-width: 350px;
+    --half-width: 175px;
+  }
+
+  .helenPhoto {
+    width: 300px;
+    height: auto;
+    padding-left: 25px
+  }
+
+  .titleFlex {
+    display: block
+  }
+
+  .aboutMe {
+    width: auto;
+    position: absolute;
+    top: 517px;
+    font-size: 1.5em
+  }
+
+  .aboutMe h3 {
+    padding: 0 0 20px 0;
+  }
+
+  .readPoems {
+    margin: 35px 50px;
+    font-size: 1em;
+    padding: 17px;
+
+  }
+
+  .poem {
+    max-width: var(--half-width)
+  }
+
+  .poems {
+    display: block;
+  }
+
+  .helenMain {
+    font-size: 1.4em;
+
+
+  }
+
+  .contacts {
+    padding-right: 5vw
+  }
+
+  .main {
+    padding-bottom: 250px;
+    padding-top: 25px
+  }
+
+  .readPoems {
+    display: none
+  }
+  .phoneHead {
+    margin: 0;
+    line-height: 60px
+  }
+  .tgLogo {
+    margin-top: 13px
+  }
+
+}
+@media (max-width: 365px) {
+  * {
+    --cont-width: 300px;
+    --half-width: 150px;
+  }
+  .helenPhoto {
+    padding: 0
+  }
+  .helenMain {
+    width: 10vw
+  }
+}
