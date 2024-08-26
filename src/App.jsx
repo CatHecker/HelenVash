@@ -14,7 +14,7 @@ return (
   <div className='main'>
     <div className='titleFlex'>
       <div className='aboutMe'>
-        <h3> Внучка <span>Пушкина</span></h3>
+        <h3> Внучк <span>Пушкина</span></h3>
         <h5>
           Lorem, ipsum dolor sit amet consectetur <span>adipisicing elit</span>.
           Voluptates nam est
